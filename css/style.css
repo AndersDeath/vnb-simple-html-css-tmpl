@@ -1,0 +1,112 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  font-family: Tahoma, Verdana, sans-serif;
+}
+
+header {
+  padding: 15px 0 15px 0;
+  text-align: center;
+  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(214,214,214,1) 100%);
+}
+header h1 {
+  font-weight: normal;
+}
+nav {
+  overflow: hidden;
+  background: #000;
+  font-size: 0.95em;
+}
+nav>ul {
+    width: 684px;
+}
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  float: left;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 0 10px 0;
+  width: 170px;
+  text-align: center;
+}
+
+nav ul li a:hover {
+  background: #494949;
+  transition:0.3s;
+}
+
+nav ul li:not(:last-child) a {
+  border-right: 1px solid #575656;
+}
+
+nav ul li ul {
+  left:-9999px;
+  opacity: 0;
+  position: absolute;
+}
+nav ul li:hover ul {
+  left: inherit;
+  display: block;
+  opacity: 1;
+  transition:0.4s;
+}
+nav ul li ul li {
+  display: block;
+  float: none;
+
+}
+nav ul li ul li a {
+  padding: 10px 8px 10px 8px;
+  width: 100%;
+  background: #000;
+  min-width: 140px;
+}
+nav ul li ul li a{
+  border-top: 1px solid #4d4d4d;
+  border-right: 0 !important;
+}
+div {
+  overflow: hidden;
+  width: 800px
+}
+article {
+  margin:15px auto;
+  padding: 15px;
+  width: 600px;
+  border:1px dotted #000;
+  float: left;
+}
+article h1 {
+  text-align: center;
+}
+article p {
+  margin: 15px;
+  text-indent: 15px;
+}
+aside {
+  margin:15px auto;
+  float: right;
+}
+aside nav ul {
+  width: 166px;
+}
+aside nav ul li a {
+  background: rgb(186, 186, 186);
+  color: #000;
+}
+aside nav ul li a:hover {
+  color:#fff;
+}
+aside nav ul li:not(:last-child) a{
+  border-bottom: 1px solid #746e6e;
+}
+
+footer {
+  display: block;
+  text-align: center;
+}
